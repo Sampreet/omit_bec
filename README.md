@@ -17,21 +17,19 @@ Author | Affiliation
 ROOT_DIR/
 |
 ├───data/
-│   ├───foo/
-│   │   ├───bar.npz
+│   ├───foo-bar/
+│   │   ├───baz_xyz.npz
 │   │   └───...
 │   └───...
 |
 │───scripts/
-│   ├───baz/
-│   │   ├───foo/
-│   │   │   ├───bar.py
-│   │   │   └───...
+│   ├───foo-bar/
+│   │   ├───baz.py
 │   │   └───...
 │   └───...
 │
 ├───.gitignore
-├───GUI.py
+├───CHANGELOG.md
 └───README.md
 ```
 
@@ -69,9 +67,7 @@ Make sure that the top-level directory, `ROOT_DIR` is in the same location as th
 To run the scripts, navigate *inside* the top-level directory, `ROOT_DIR`, and execute:
 
 ```bash
-python scripts/foo_bar.py
+python scripts/foo-bar/baz.py
 ```
 
-Here, `foo/bar.py` is the name of the script.
-
-## Contributors
+Here, `foo-bar` is the name of the folder and  `baz.py` is the name of the file.

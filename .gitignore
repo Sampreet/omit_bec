@@ -1,9 +1,6 @@
 # Visual Studio files
 .vscode/
 
-# data folder
-data/
-
 # Jupyter Notebook Checkpoints
 *.ipynb_checkpoints/
 
