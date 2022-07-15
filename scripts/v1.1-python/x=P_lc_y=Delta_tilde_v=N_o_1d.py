@@ -49,6 +49,9 @@ I = m * amu * R**2
 # atomic interactions
 g_tilde = g_tilde_norm * hbar / 4 / I / N
 
+# frequency of the control laser
+omega_lc = 2 * pi * c / lambda_lc
+
 # frequently used variable
 temp = 2 * g_tilde * N
 
@@ -72,9 +75,9 @@ C = G**2 * (omega_c_tilde + omega_d_tilde) / np.sqrt(A_2)
 # critical detuning 
 Delta_tilde_cr = - np.sqrt(3) * gamma_o / 2
 # frequency of the control laser
-omega_lc = 2 * np.pi * sc.c / lambda_lc
+omega_lc = 2 * pi * c / lambda_lc
 # critical power of the control laser
-P_cr = gamma_o**2 * sc.hbar * omega_lc / 3 / np.sqrt(3) / C / mu
+P_cr = gamma_o**2 * hbar * omega_lc / 3 / np.sqrt(3) / C / mu
 
 # power of the control laser
 P_lcs = np.linspace(0, 2e-9, 801)
@@ -98,8 +101,6 @@ for Delta_tilde in Delta_tildes:
 
     # iterate control laser powers
     for P_lc in P_lcs:
-        # frequency of the control laser
-        omega_lc = 2 * pi * c / lambda_lc
         # amplitude of the control laser
         eta_lc = np.sqrt(mu * gamma_o * P_lc / hbar / omega_lc)
 

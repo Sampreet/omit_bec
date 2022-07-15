@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022/07/15 - 00 - v1.1 Updated MATLAB Scripts
+> Toolbox version 0.8.5
+* Updated `v1.1-matlab` scripts.
+* Minor fixes to `v1.1-python` scripts
+
 ## 2022/07/12 - 00 - v1.1 Restructured Scripts
 > Toolbox version 0.8.5
 * Updated data and scripts.

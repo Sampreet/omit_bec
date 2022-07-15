@@ -74,7 +74,7 @@ Delta_tilde_cr = - np.sqrt(3) * gamma_o / 2
 # frequency of the control laser
 omega_lc = 2 * pi * c / lambda_lc
 # critical power of the control laser
-P_cr = gamma_o**2 * sc.hbar * omega_lc / 3 / np.sqrt(3) / C / mu
+P_cr = gamma_o**2 * hbar * omega_lc / 3 / np.sqrt(3) / C / mu
 
 # laser detuning normalized by critical values
 Delta_tildes = np.linspace(-4, 4, 801) * gamma_o
@@ -93,7 +93,7 @@ N_o_multis = list()
 # iterate control laser powers
 for P_lc in P_lcs:
     # amplitude of the control laser
-    eta_lc = np.sqrt(mu * gamma_o * P_lc / sc.hbar / omega_lc)
+    eta_lc = np.sqrt(mu * gamma_o * P_lc / hbar / omega_lc)
 
     # temporary lists
     Delta_tilde_norm_multis_temp = list()
