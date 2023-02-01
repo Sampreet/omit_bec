@@ -1,6 +1,7 @@
-# Cavity Detection of Persistent Current Chirality using Control-Probe Optomechanics
+# Pump-probe Cavity Optomechanics with a Rotating Atomic Superfluid in a Ring
 
-[![Version](https://img.shields.io/badge/version-1.1-red?style=for-the-badge)](#)
+[![Version](https://img.shields.io/badge/version-3.5-red?style=for-the-badge)](#)
+[![Publication](https://img.shields.io/badge/PhysRevA-107.013525-teal)](https://doi.org/10.1103/PhysRevA.107.013525)
 
 > A collection of all data and scripts for the work.
 
@@ -8,6 +9,7 @@ Author | Affiliation
 ------------ | -------------
 [Sampreet Kalita](https://www.iitg.ac.in/stud/sampreet/) | Department of Physics, Indian Institute of Technology Guwahati, Assam 781039, India
 [Pardeep Kumar](https://scholar.google.com/citations?user=CFIPlp8AAAAJ) | Max Planck Institute for the Science of Light, Staatsstraße 2, 91058 Erlangen, Germany
+[Rina Kanamoto](https://www.isc.meiji.ac.jp/~kanamoto/rinakanamoto_en.html) | Department of Physics, Meiji University, Kawasaki, Kanagawa 214-8571, Japan
 [Mishkatul Bhattacharya](https://scholar.google.com/citations?user=5gCcMuMAAAAJ) | School of Physics and Astronomy, Rochester Institute of Technology, 84 Lomb Memorial Drive, Rochester, New York 14623, USA
 [Amarendra Kumar Sarma](https://www.iitg.ac.in/aksarma/) | Department of Physics, Indian Institute of Technology Guwahati, Assam 781039, India
 
