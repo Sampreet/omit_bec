@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024/01/18 - 00 - v3.5 Version Upgrade
+> Toolbox version 1.0.1
+* Updated scripts and system.
+* Added notebooks.
+* Updated `README`.
+
 ## 2023/01/30 - 00 - v3.5 Version Upgrade
 > Toolbox version 0.9.0
 * Updated `v3.5-python` and `v3.5-qom-v0.9.0` scripts.

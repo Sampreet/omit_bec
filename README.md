@@ -1,9 +1,10 @@
 # Pump-probe Cavity Optomechanics with a Rotating Atomic Superfluid in a Ring
 
-[![Version](https://img.shields.io/badge/version-3.5-red?style=for-the-badge)](#)
-[![Publication](https://img.shields.io/badge/PhysRevA-107.013525-teal)](https://doi.org/10.1103/PhysRevA.107.013525)
+[![Manuscript Version](https://img.shields.io/badge/version-3.5-red?style=for-the-badge)](https://doi.org/10.1103/PhysRevA.107.013525)
+[![Toolbox Version](https://img.shields.io/badge/PhysRevA-107.013525-teal)]
+[![Last Updated](https://img.shields.io/github/last-commit/sampreet/omit_bec?style=for-the-badge)](https://github.com/sampreet/omit_bec/blob/master/CHANGELOG.md)
 
-> A collection of all data and scripts for the work.
+> Phys. Rev. A 107, 013525 (2023)
 
 Author | Affiliation
 ------------ | -------------
@@ -13,21 +14,56 @@ Author | Affiliation
 [Mishkatul Bhattacharya](https://scholar.google.com/citations?user=5gCcMuMAAAAJ) | School of Physics and Astronomy, Rochester Institute of Technology, 84 Lomb Memorial Drive, Rochester, New York 14623, USA
 [Amarendra Kumar Sarma](https://www.iitg.ac.in/aksarma/) | Department of Physics, Indian Institute of Technology Guwahati, Assam 781039, India
 
+Contributing Part | SK | PK
+------------ | ------------ | -------------
+Literature review | 40% | 60%
+Idea and formulation | 40% | 60%
+Derivations of expressions | 70% | 30%
+Parameter sweeping | 70% | 30%
+Illustrations and plots | 60% | 40%
+Results and discussion | 50% | 50%
+Manuscript preparation | 60% | 40%
+
+## About the Work
+
+Atomic superfluids confined in a ring provide a remarkable paradigm for quantized circulation.
+Very recently, a technique based on cavity optomechanics has been proposed [Kumar et al., Phys. Rev. Lett. 127, 113601 (2021)] for sensing and manipulating the rotation of a bosonic ring condensate with minimal destruction, in situ and in real time.
+Here, we theoretically investigate other coherent interference effects that can be supported by the proposed configuration.
+Specifically, in the presence of a strong control beam, we analyze the influence of atomic rotation on the transmission spectrum of a weak probe laser through a cavity containing a ring condensate.
+We present a detailed study of the resulting narrow probe transmission profiles and group delay and show that they can be tuned by means of persistent currents.
+Our results explore a facet of rotating matter waves and are relevant to applications such as atomtronics, sensing, and information processing.
+
+## Notebooks
+
+* [Approximated expressions for the Routh-Hurwitz Criteria for the Analysis of Stability of a BEC-OM System with a weak probe laser and a strong control laser containing OAM (BEC_10)](notebooks/bec_10_dynamical_stability_approx.ipynb)
+* [Routh-Hurwitz Criteria for the Analysis of Stability of a BEC-OM System with a weak probe laser and a strong control laser containing OAM (BEC_10)](notebooks/bec_10_dynamical_stability.ipynb)
+* [Calculation of Four-wave-mixing for a BEC-OM Model with a weak probe laser and a strong control laser containing OAM (BEC_10)](notebooks/bec_10_four_wave_mixing.ipynb)
+* [Calculation of Optomechanically-induced Transparency for a BEC-OM Model with a weak probe laser and a strong control laser containing OAM (BEC_10)](notebooks/bec_10_induced_transparency.ipynb)
+* [Approximated Expression for Transmission for a BEC-OM Model with a weak probe laser and a strong control laser containing OAM (BEC_10)](notebooks/bec_10_transmission_approx.ipynb)
+* [Plots in the Latest Version of the Manuscript](notebooks/v3.5_qom-v1.0.1/plots.ipynb)
+
 ## Structure of the Repository
 
 ```
 ROOT_DIR/
 |
-├───data/
-│   ├───foo-bar/
-│   │   ├───baz_xyz.npz
+├───notebooks/
+│   ├───bar/
+│   │   ├───baz.ipynb
 │   │   └───...
+│   │
+│   ├───foo_baz.ipynb
 │   └───...
 |
 │───scripts/
-│   ├───foo-bar/
+│   ├───bar/
 │   │   ├───baz.py
 │   │   └───...
+│   └───...
+|
+├───systems/
+│   ├───__init__.py
+│   ├───Foo.py
 │   └───...
 │
 ├───.gitignore
@@ -35,41 +71,19 @@ ROOT_DIR/
 └───README.md
 ```
 
-## Execution
+Here, `foo` represents the module or class and `bar` represents the version.
 
-### Installing Dependencies
+## Installing Dependencies
 
-The project requires `Python 3.8+` installed via the [Anaconda distribution](https://www.anaconda.com/products/individual). 
-An extensive guide to set up your python environment same can be found [here](https://sampreet.github.io/python-for-physicists/modules/m01-getting-started/m01t01-setting-up-python.html).
+All numerical data and plots are obtained using the [Quantum Optomechanics Toolbox](https://github.com/sampreet/qom), an open-source Python framework to simulate optomechanical systems.
+Refer to the [QOM toolbox documentation](https://sampreet.github.io/qom-docs/v1.0.1) for the steps to install this libary.
 
-Once the installation is complete and `conda` is configured, it is preferable to create a new conda environment (say `qom`) and activate it using:
+## Running the Scripts
 
-```bash
-conda create -n qom python=3
-conda activate qom
-```
-
-This project uses [The Quantum Optomechanics Toolbox](https://github.com/Sampreet/qom) via Python Package Index using `pip`:
+To run the scripts, navigate *inside* the top-level directory, and execute:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ qom
+python scripts/bar/baz.py
 ```
 
-Alternatively, [clone](https://github.com/Sampreet/qom) or [download](https://github.com/Sampreet/qom/archive/refs/heads/master.zip) as `.zip` and extract the contents:
-Now, execute the following from *outside* the top-level directory, `ROOT_DIR`, inside which `setup.py` is located:
-
-```bash
-pip install -e ROOT_DIR
-```
-
-### Running the Scripts
-
-Make sure that the top-level directory, `ROOT_DIR` is in the same location as the `bec-systems` repository.
-
-To run the scripts, navigate *inside* the top-level directory, `ROOT_DIR`, and execute:
-
-```bash
-python scripts/foo-bar/baz.py
-```
-
-Here, `foo-bar` is the name of the folder and  `baz.py` is the name of the file.
+Here, `bar` is the name of the folder (containing the version information) inside `scripts` and `baz.py` is the name of the script (refer to the repository structure).
