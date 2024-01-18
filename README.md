@@ -1,7 +1,7 @@
 # Pump-probe Cavity Optomechanics with a Rotating Atomic Superfluid in a Ring
 
 [![Manuscript Version](https://img.shields.io/badge/version-3.5-red?style=for-the-badge)](https://doi.org/10.1103/PhysRevA.107.013525)
-[![Toolbox Version](https://img.shields.io/badge/PhysRevA-107.013525-teal)]
+[![Toolbox Version](https://img.shields.io/badge/qom-v1.0.1-red?style=for-the-badge)](https://sampreet.github.io/qom-docs/v1.0.1)
 [![Last Updated](https://img.shields.io/github/last-commit/sampreet/omit_bec?style=for-the-badge)](https://github.com/sampreet/omit_bec/blob/master/CHANGELOG.md)
 
 > Phys. Rev. A 107, 013525 (2023)

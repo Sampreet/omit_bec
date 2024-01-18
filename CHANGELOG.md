@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024/01/18 - 01 - Updated README
+> Toolbox version 1.0.1
+* Updated `README`.
+
 ## 2024/01/18 - 00 - v3.5 Version Upgrade
 > Toolbox version 1.0.1
 * Updated scripts and system.
